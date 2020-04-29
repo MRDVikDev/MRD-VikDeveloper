@@ -1,0 +1,200 @@
+@media (min-width: 720px){
+            
+}
+.background {
+    background-color: antiquewhite;
+} 
+        
+.container {
+    font-family: serif;
+    height: 1080px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+        "header header header"
+        "mobile line computer"
+        "footer footer footer"
+        "end end end";
+}
+        
+.mobileIcon {
+    grid-area: mobile;
+    justify-self: center;
+    width: 275px;
+    height: 260px;
+    margin-top: 50px;
+    display: block;
+}
+        
+.computerIcon {
+    grid-area: computer;
+    justify-self: center;
+    width: 275px;
+    height: 250px;
+    margin-top: 50px;
+    display: block;
+}
+.vertLine {
+    border-left: 1px solid gray;
+    height: 300px;
+    grid-area: line;
+    margin: 20px 0px 0px 50%;
+}
+        
+.header {
+    background: black;
+    height: 200px;
+    width: 100%;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "title title title"
+        "navbar navbar lang";
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+        
+.cursor:hover {
+    background: gray;
+    border-radius: 20px;
+}
+
+.infoBox {
+    height: auto;
+    margin-top: 25px;
+    grid-area: footer;
+    background: black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "info1 info2";
+}
+        
+.informationPhone {
+    color: white;
+    grid-area: info1;
+    font-family:sans-serif;
+}
+
+.informationComputer {
+    color:white;
+    grid-area: info2;
+    font-family:sans-serif;
+}
+
+.footer {
+    grid-area: footer;
+    background: white;
+}
+
+.paragraph {
+    background: antiquewhite;
+    border-color: white;
+    border-radius: 20px;
+    color: black;
+    font-size: 30px;
+    justify-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lang {
+    grid-area: lang;
+    color: white;
+    border-radius: 50%;
+    margin-left: 75px;
+    margin-top: 15px;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.end {
+    grid-area: end;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: dimgrey;
+    display: grid;
+    grid-template-areas:
+        "authorName author author"
+        "logoEnd Clist Clist";
+}
+
+.author {
+    font-family: calibri;
+    font-size: 50px;
+    grid-area: author;
+}
+
+.logoEnd {
+    grid-area: logoEnd;
+}
+
+.clist {
+    grid-area: Clist;
+    width: 100%;
+    height: 100%;
+    background-color:dimgrey;
+}
+
+.block2 {
+    grid-area: block2;
+    width: 100%;
+    height: 100%;
+}
+
+.block3 {
+    grid-area: block3;
+    width: 100%;
+    height: 100%;
+}
+
+.socialM {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: dimgray;
+}
+
+.socialMList {
+    float: left;
+}
+
+.socialMList a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.socialMList a:hover {
+    background-color: gray;
+    color: white;
+}
+
+.title {
+    color: white;
+    font-family: calibri, monospace;
+    font-size: 50px;
+    grid-area: title;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-family: calibri, monospace;
+    margin-top: -10px;
+}
