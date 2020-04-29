@@ -1,2 +1,0 @@
-# MRD-VikDeveloper
-MRD
